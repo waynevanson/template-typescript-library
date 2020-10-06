@@ -26,13 +26,12 @@ I use these tools for librarires all the time now, so I've made a template for c
 
 ## Setup
 
-Once you've cloned this template and downloaded it to your local machine, you'll have a few things to do before it will be truly yours.
+Once you've cloned this template and downloaded it to your local machine, you'll have a few things to change before it will be truly yours.
 
-| File                                       | Action                                           |
-| :----------------------------------------- | :----------------------------------------------- |
-| **`packagejson.name`**                     | Change to the name that will be consumed by NPM. |
-| **`packagejson.repository.url`**           | Change to your git repository URL.               |
-| **`.github/workflows/main.yaml.template`** | Rename `main.yaml.template` to `main.yaml`.      |
+| File                             | Action                                           |
+| :------------------------------- | :----------------------------------------------- |
+| **`packagejson.name`**           | Change to the name that will be consumed by NPM. |
+| **`packagejson.repository.url`** | Change to your git repository URL.               |
 
 ## Tools
 
