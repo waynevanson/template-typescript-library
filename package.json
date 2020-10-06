@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "main": "dist/cjs/index.js",
   "module": "dist/es6/index.js",
+  "types": "dist/es6/index.d.ts",
   "license": "MIT",
   "repository": {
     "type": "git",
