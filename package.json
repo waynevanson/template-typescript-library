@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/waynevanson/template-typescript-library.git"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "commit": "cz",
     "build": "npm-run-all --parallel build:*",
