@@ -14,15 +14,16 @@
     "dist"
   ],
   "scripts": {
-    "commit": "cz",
     "build": "npm-run-all --parallel build:*",
+    "build:browser": "microbundle --strict -f umd -i src/index.ts -o dist/browser/index.js --pkg-main false",
     "build:cjs": "tsc --project .config/tsconfig.cjs.json",
     "build:es6": "tsc --project .config/tsconfig.es6.json",
-    "build:browser": "microbundle --strict -f umd -i src/index.ts -o dist/browser/index.js --pkg-main false",
+    "commit": "cz",
     "commitlint": "commitlint --config .config/commitlint.json",
     "eslint": "eslint --config .config/.eslintrc",
     "jest": "jest --config .config/jest.json",
     "lint-staged": "lint-staged --config lint-staged.json",
+    "prepublishOnly": "yarn test && yarn build",
     "postinstall": "husky install",
     "prettier": "prettier --config .config/.prettierrc",
     "semantic-release": "semantic-release --extends .config/semantic-release.json",
