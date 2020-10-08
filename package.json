@@ -19,8 +19,9 @@
     "build:cjs": "tsc --project .config/tsconfig.cjs.json",
     "build:es6": "tsc --project .config/tsconfig.es6.json",
     "build:browser": "microbundle --strict -f umd -i src/index.ts -o dist/browser/index.js --pkg-main false",
-    "test": "jest",
-    "prepublishOnly": "yarn test && yarn build"
+    "jest": "jest --config .config/jest.json",
+    "test": "npm-run-all --parallel test:*",
+    "test:unit": "yarn jest",
   },
   "peerDependencies": {
     "typescript": "^4.0.0."
