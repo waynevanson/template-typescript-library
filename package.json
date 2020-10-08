@@ -19,10 +19,11 @@
     "build:cjs": "tsc --project .config/tsconfig.cjs.json",
     "build:es6": "tsc --project .config/tsconfig.es6.json",
     "build:browser": "microbundle --strict -f umd -i src/index.ts -o dist/browser/index.js --pkg-main false",
+    "commitlint": "commitlint --config .config/commitlint.json",
     "eslint": "eslint --config .config/.eslintrc",
     "jest": "jest --config .config/jest.json",
     "test": "npm-run-all --parallel test:*",
-    "test:unit": "yarn jest",
+    "test:unit": "yarn jest"
   },
   "peerDependencies": {
     "typescript": "^4.0.0."
@@ -55,11 +56,6 @@
     "ts-jest": "^26.4.1",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.0"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
   },
   "config": {
     "commitizen": {
