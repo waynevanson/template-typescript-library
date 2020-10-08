@@ -22,6 +22,7 @@
     "commitlint": "commitlint --config .config/commitlint.json",
     "eslint": "eslint --config .config/.eslintrc",
     "jest": "jest --config .config/jest.json",
+    "lint-staged": "lint-staged --config lint-staged.json",
     "postinstall": "husky install",
     "prettier": "prettier --config .config/.prettierrc",
     "semantic-release": "semantic-release --extends .config/semantic-release.json",
@@ -72,20 +73,6 @@
       "pre-commit": "yarn lint-staged",
       "pre-push": "yarn test && yarn build"
     }
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node"
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": "eslint --fix",
-    "*.{js,css,md}": "prettier --write",
-    "readme.md": "doctoc --github readme.md"
-  },
-  "prettier": {
-    "tabWidth": 2,
-    "arrowParens": "always",
-    "semi": false
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
