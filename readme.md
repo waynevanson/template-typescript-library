@@ -1,5 +1,11 @@
 # template-typescript-library
 
+When asking users to install your package, they need to run the following:
+
+```
+echo "@waynevanson:registry=https://npm.pkg.github.com" >> .npmrc
+```
+
 A starter template configured for Typescript based node projects.
 I use these tools for librarires all the time now, so I've made a template for convenience.
 
