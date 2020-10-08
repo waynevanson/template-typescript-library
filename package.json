@@ -1,10 +1,10 @@
 {
   "name": "@username/template-typescript-library",
   "version": "0.0.0",
-  "main": "dist/cjs/index.js",
-  "module": "dist/es6/index.js",
-  "browser": "dist/browser/index.js",
-  "types": "dist/es6/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "browser": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,10 +14,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "npm-run-all --parallel build:*",
-    "build:browser": "microbundle --strict -f umd -i src/index.ts -o dist/browser/index.js --pkg-main false",
-    "build:cjs": "tsc --project .config/tsconfig.cjs.json",
-    "build:es6": "tsc --project .config/tsconfig.es6.json",
+    "build": "microbundle build",
     "commit": "cz",
     "commitlint": "commitlint --config .config/commitlint.json",
     "eslint": "eslint --config .config/.eslintrc",
