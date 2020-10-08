@@ -1,5 +1,5 @@
 {
-  "name": "template-typescript-library",
+  "name": "@username/template-typescript-library",
   "version": "0.0.0",
   "main": "dist/cjs/index.js",
   "module": "dist/es6/index.js",
