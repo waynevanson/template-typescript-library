@@ -23,6 +23,7 @@
     "eslint": "eslint --config .config/.eslintrc",
     "jest": "jest --config .config/jest.json",
     "postinstall": "husky install",
+    "prettier": "prettier --config .config/.prettierrc",
     "semantic-release": "semantic-release --extends .config/semantic-release.json",
     "test": "npm-run-all --parallel test:*",
     "test:unit": "yarn jest"
