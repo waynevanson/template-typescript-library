@@ -26,7 +26,7 @@
     "prepublishOnly": "yarn test && yarn build",
     "postinstall": "husky install",
     "prettier": "prettier --config .config/.prettierrc",
-    "semantic-release": "semantic-release --extends .config/semantic-release.json",
+    "semantic-release": "semantic-release --extends ./.config/semantic-release.json",
     "test": "npm-run-all --parallel test:*",
     "test:unit": "yarn jest"
   },
