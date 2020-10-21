@@ -20,7 +20,7 @@
     "prepublishOnly": "yarn test && yarn build",
     "postinstall": "husky install",
     "test": "npm-run-all --parallel test:*",
-    "test:unit": "yarn jest"
+    "test:unit": "jest"
   },
   "peerDependencies": {
     "typescript": "^4.0.0."
